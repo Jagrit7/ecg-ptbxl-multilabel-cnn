@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+venv/
+env/
+.env
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+
+# Dataset - too large for git, download separately (see README)
+data/
+*.dat
+*.hea
