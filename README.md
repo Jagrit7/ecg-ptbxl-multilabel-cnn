@@ -13,7 +13,6 @@ Multi-label classification of 12-lead ECG signals into 5 diagnostic superclasses
 - Custom 1D-CNN, 7 conv blocks (tapered kernel sizes 15→3), BatchNorm + ReLU + MaxPool
 - Global Average Pooling + 2-layer FC head with dropout
 - 1,007,269 parameters
-- [architecture diagram or code snippet]
 
 ## Data
 
@@ -58,11 +57,11 @@ Results are competitive with published PTB-XL baselines (Strodthoff et al., 2020
 despite using a substantially smaller model (~1M params vs. ResNet/Inception baselines).
 
 ## Repo Structure
-├── data_handling.ipynb    # preprocessing, label aggregation, dataset/dataloader
-├── model.py                # ECGClassifier architecture
-├── train.py                 # training loop
-├── best_model.pt            # trained weights
+├── ecg_ptbxl_training.ipynb   # data pipeline, model, training, evaluation
+├── best_model.pt               # trained weights
 ├── training_curves.png
+├── training_history.json
+├── requirements.txt
 └── README.md
 
 ## References
